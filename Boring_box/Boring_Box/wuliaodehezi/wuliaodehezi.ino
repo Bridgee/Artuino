@@ -1129,7 +1129,7 @@ void loop()
   } while( u8g.nextPage() );
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
-  page==max_pages?page=0:page++;
+  page==max_pages?       page=0:page++;
   delay(3000);
   
   switchStatus = digitalRead(frontSwitchPin); //读取开关状态
@@ -1144,7 +1144,6 @@ void loop()
       for (int i = 70; i <= 120; i++)
       {
         boxServo.write(i);
-
         delay(20);
       }
       for (int i = 180; i >= 35; i--)
