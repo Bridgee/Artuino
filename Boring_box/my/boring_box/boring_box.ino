@@ -30,7 +30,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   switchStatus = digitalRead(frontSwitchPin); //读取开关状态
-  //action = random(1,16);
 
   if (switchStatus == LOW) {
     //若开关被按下
